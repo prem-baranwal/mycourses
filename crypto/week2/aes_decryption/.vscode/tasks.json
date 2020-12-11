@@ -1,0 +1,57 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"type": "shell",
+			"label": "C/C++: clang++ build for AES-CBC",
+			"command": "/usr/local/opt/llvm/bin/clang++",
+			"args": [
+				"-std=c++17",
+				"-stdlib=libc++",
+				"-I/usr/local/include",
+				"-L/usr/local/lib",
+				"-lcryptopp",
+				"-g",
+				"${workspaceFolder}/aes_cbc_dec.cpp",
+				"-o",
+				"${workspaceFolder}/aes_cbc_dec"
+			],
+			"options": {
+				"cwd": "${workspaceFolder}"
+			},
+			"problemMatcher": [
+				"$gcc"
+			],
+			"group": {
+				"kind": "build",
+				"isDefault": true
+			}
+		},
+		{
+			"type": "shell",
+			"label": "C/C++: clang++ build for AES-CTR",
+			"command": "/usr/local/opt/llvm/bin/clang++",
+			"args": [
+				"-std=c++17",
+				"-stdlib=libc++",
+				"-I/usr/local/include",
+				"-L/usr/local/lib",
+				"-lcryptopp",
+				"-g",
+				"${workspaceFolder}/aes_ctr_dec.cpp",
+				"-o",
+				"${workspaceFolder}/aes_ctr_dec"
+			],
+			"options": {
+				"cwd": "${workspaceFolder}"
+			},
+			"problemMatcher": [
+				"$gcc"
+			],
+			"group": {
+				"kind": "build",
+				"isDefault": true
+			}
+		}
+	]
+}

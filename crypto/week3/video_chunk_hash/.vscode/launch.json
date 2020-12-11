@@ -1,0 +1,47 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "(lldb) SHA256 Launch",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "${workspaceFolder}/sha256_sample",
+            "args": [],
+            "stopAtEntry": true,
+            "cwd": "${workspaceFolder}",
+            "environment": [],
+            "externalConsole": false,
+            "MIMode": "lldb",
+            "preLaunchTask": "Clang++ build for SHA256 Sample"
+        },
+        {
+            "name": "(lldb) Video Chunking Launch",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "${workspaceFolder}/video_chunk",
+            "args": [],
+            "stopAtEntry": true,
+            "cwd": "${workspaceFolder}",
+            "environment": [],
+            "externalConsole": false,
+            "MIMode": "lldb",
+            "preLaunchTask": "Clang++ build for Video File Chunking"
+        },
+        {
+            "name": "(lldb) Large Video Chunk Hash Launch",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "${workspaceFolder}/video_chunk_hash",
+            "args": [],
+            "stopAtEntry": true,
+            "cwd": "${workspaceFolder}",
+            "environment": [],
+            "externalConsole": false,
+            "MIMode": "lldb",
+            "preLaunchTask": "Clang++ build for Generating Hash of Large Video"
+        }
+    ]
+}

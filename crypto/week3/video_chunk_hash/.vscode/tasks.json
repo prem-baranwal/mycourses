@@ -1,0 +1,77 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"type": "shell",
+			"label": "Clang++ build for SHA256 Sample",
+			"command": "/usr/local/opt/llvm/bin/clang++",
+			"args": [
+				"-std=c++17",
+				"-stdlib=libc++",
+				"-I/usr/local/include",
+				"-L/usr/local/lib",
+				"-lcryptopp",
+				"-g",
+				"${workspaceFolder}/sha256_sample.cpp",
+				"-o",
+				"${workspaceFolder}/sha256_sample"
+			],
+			"options": {
+				"cwd": "${workspaceFolder}"
+			},
+			"problemMatcher": ["$gcc"],
+			"group": {
+				"kind": "build",
+				"isDefault": true
+			}
+		},
+		{
+			"type": "shell",
+			"label": "Clang++ build for Video File Chunking",
+			"command": "/usr/local/opt/llvm/bin/clang++",
+			"args": [
+				"-std=c++17",
+				"-stdlib=libc++",
+				"-I/usr/local/include",
+				"-L/usr/local/lib",
+				"-lcryptopp",
+				"-g",
+				"${workspaceFolder}/video_chunk.cpp",
+				"-o",
+				"${workspaceFolder}/video_chunk"
+			],
+			"options": {
+				"cwd": "${workspaceFolder}"
+			},
+			"problemMatcher": ["$gcc"],
+			"group": {
+				"kind": "build",
+				"isDefault": true
+			}
+		},
+		{
+			"type": "shell",
+			"label": "Clang++ build for Generating Hash of Large Video",
+			"command": "/usr/local/opt/llvm/bin/clang++",
+			"args": [
+				"-std=c++17",
+				"-stdlib=libc++",
+				"-I/usr/local/include",
+				"-L/usr/local/lib",
+				"-lcryptopp",
+				"-g",
+				"${workspaceFolder}/video_chunk_hash.cpp",
+				"-o",
+				"${workspaceFolder}/video_chunk_hash"
+			],
+			"options": {
+				"cwd": "${workspaceFolder}"
+			},
+			"problemMatcher": ["$gcc"],
+			"group": {
+				"kind": "build",
+				"isDefault": true
+			}
+		}
+	]
+}
